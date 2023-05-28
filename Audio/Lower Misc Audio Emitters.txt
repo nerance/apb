@@ -1,0 +1,31 @@
+There are certain sound emitters throughout the districts which cannot be removed through file edits easily as they are contained within the same audio file packages as the most basic things like gun sounds, car sounds, etc. Some of these sound emitters include vents, generators and many others which can be really loud and annoying. I recommend using this in combination with "Remove Ambient Sounds". So instead there is another way to lower them significantly and make them less prevalent through a very simple line edit in one of the files.
+
+The only reason I am including this as a text file instruction is simply because this change is in the same file as the Muzzle Flash + Ragdoll Removals (Features folder) and if I include both as files ready-to-use you'd be replacing one with the other without realising why one works and the other one doesn't. As it is a rather simple ini file edit I figured enough people will be able to do it on their own following the simple instructions below.
+
+The recommended method is to select your muzzle flash + ragdoll removal variant of choice (if any) and then editing the DefaultGame.ini file as explained below. After which you take your newly edited DefaultGame.ini file with all of your changes and save it somewhere on your PC for easy re-use later on after game patches and such. If you paste any of the ragdoll removals on top of this edit it will simply erase the edit and you'd have to do it all over again.
+
+Credit to lazer.
+
+
+Installation:
+
+1. Navigate to "APB Reloaded\APBGame\Config" and open "DefaultGame.ini" using your text file editor of choice (most of us use Notepad++ which is free and is the best for editing config files). If you don't have file extensions enabled in Windows (they are off by default) it will only appear as "DefaultGame" but that makes no difference.
+
+2. Look for the following lines (You can hit CTRL + F to search):
+
+m_nPrioritisedEmitters=
+m_nPrioritisedNPCS=
+
+and change them accordingly:
+
+m_nPrioritisedEmitters=1
+m_nPrioritisedNPCS=1
+
+DO NOT SET THEM TO 0 AS IT MAY CAUSE YOUR GAME TO CRASH. 1 IS THE LOWEST IT CAN GO.
+
+
+(Skip step 3 if you've already done it.)
+3. Create a shortcut of APB / APB.exe from the APB Reloaded\Binaries folder to your desktop (or wherever you launch your games from) and always start the game from there.
+
+
+Note: If you launch it from the Steam Library or the GamersFirst launcher, the game will replace the custom files with the default ones and you will have to redo the entire process. Always launch the game from that newly made APB shortcut unless there is a game patch, in which case you must patch the game the normal way then re-apply the config files and launch from the shortcut again.
